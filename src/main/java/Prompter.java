@@ -28,8 +28,8 @@ public class Prompter {
 		System.out.println();
 	}
 
-	public int getGuess() {
-		System.out.print("Guess: ");
+	public int getGuess(int numGuesses, int max) {
+		System.out.printf("Guess #%d (1-%d): ",numGuesses + 1,max);
 		return getInt();
 	}
 	

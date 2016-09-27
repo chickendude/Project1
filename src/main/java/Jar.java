@@ -18,6 +18,16 @@ public class Jar {
 		// check if guess is within bounds
 		if (guess <= mMaxItems && guess > 0) {
 			mNumGuesses++;
+			if (guess > mNumItems)
+				System.out.println("Your guess is too high");
+			else if (guess < mNumItems)
+				System.out.println("Your guess is too low");
+		} else if (guess > mMaxItems) {
+			System.out.printf("Your guess must be less than %d!%n",mMaxItems);
+		} else if (guess == 0) {
+			System.out.println("There's obviously at least one!");
+		} else {
+			System.out.println("How is that even possible?");
 		}
 		return guess == mNumItems;
 	}
