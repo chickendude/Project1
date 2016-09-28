@@ -23,7 +23,7 @@ public class Jar {
 			else if (guess < mNumItems)
 				System.out.println("Your guess is too low");
 		} else if (guess > mMaxItems) {
-			System.out.printf("Your guess must be less than %d!%n",mMaxItems);
+			System.out.printf("Your guess must be less than or equal to %d!%n",mMaxItems);
 		} else if (guess == 0) {
 			System.out.println("There's obviously at least one!");
 		} else {
