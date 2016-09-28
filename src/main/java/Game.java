@@ -13,7 +13,7 @@ public class Game {
     public static boolean playGame() {
     	Prompter prompter = new Prompter();
     	String[] menuChoices = {"New Game","Exit"};
-		int choice = prompter.showMenu("Please select your game type:",menuChoices);
+		int choice = prompter.showMenu("Please select an option:",menuChoices);
     	switch (choice) {
     	case 1:
     		newGame(prompter);
